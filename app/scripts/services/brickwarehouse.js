@@ -13,7 +13,7 @@ angular.module('serviceQuizApp')
     this.bricks = {
       'red': {
         '1x1': {
-          quantity: 16,
+          quantity: 29,
           price: 0.01
         },
         '2x2': {
