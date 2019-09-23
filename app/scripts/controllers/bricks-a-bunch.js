@@ -11,4 +11,7 @@ angular.module('serviceQuizApp')
   .controller('BricksABunchCtrl', ['brickWarehouse', function (warehouse) {
     this.name = 'Bricks A Bunch';
     this.redBricks = warehouse.bricks.red;
+    this.addToCart = function(price) {
+      warehouse.decreaseQuantity('red', price);
+    };
   }]);
